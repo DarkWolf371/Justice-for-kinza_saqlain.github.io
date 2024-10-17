@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url('https://i1.sndcdn.com/artworks-RyLxYVdJNgadCEZB-Yz7Fng-t500x500.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed; /* Parallax effect */
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.container {
+  text-align: center;
+  color: white;
+  z-index: 2;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 56px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.subtitle {
+  font-size: 24px;
+  margin: 20px 0;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.quote {
+  font-size: 18px;
+  margin: 20px 0;
+  font-style: italic;
+  color: #ffcccb;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 20px;
+  animation: fadeInUp 2s ease;
+}
+
+.scroll-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e63946;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  animation: bounce 2s infinite;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-link:hover {
+  background-color: #d32f2f;
+}
+
+.demand-section {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.demand-section h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  animation: fadeInDown 1s ease;
+}
+
+.demand-item {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease;
+}
+
+.demand-item h3 {
+  font-size: 28px;
+  color: #e63946;
+  margin-bottom: 10px;
+}
+
+.demand-item p {
+  font-size: 18px;
+  color: black;
+}
+
+.support-section {
+  background-color: #e63946;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.support-section h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.support-section p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: white;
+  color: #e63946;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d32f2f;
+  color: white;
+}
+
+#supportMsg {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #28a745;
+  animation: fadeIn 1s ease;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 32px;
+  }
+  .subtitle, .description, .demand-item p, .support-section p {
+    font-size: 16px;
+  }
+  .scroll-link {
+    font-size: 14px;
+  }
+}

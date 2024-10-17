@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justice for PGC Girl - Kinza Saleem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hero" id="home">
+    <div class="overlay">
+      <div class="container">
+        <header class="header">
+          <h1>Justice for PGC Girl</h1>
+          <p class="subtitle">Standing up for Kinza Saleem. Together, we demand justice and an end to violence against women.</p>
+          <blockquote class="quote">
+            "Injustice anywhere is a threat to justice everywhere." - Martin Luther King Jr.
+          </blockquote>
+          <p class="description">
+            This movement is dedicated to seeking justice for Kinza Saleem. We must stand together to ensure that such incidents are addressed and that women everywhere feel safe.
+          </p>
+          <a href="#demand" class="scroll-link">See Our Full Demands</a>
+        </header>
+      </div>
+    </div>
+  </div>
+
+  <!-- Demand Section -->
+  <section class="demand-section" id="demand">
+    <div class="container">
+      <h2>Our Demands for Justice</h2>
+      <div class="demand-item">
+        <h3>1. Immediate Investigation</h3>
+        <p>A thorough, unbiased investigation into the incident involving Kinza Saleem. All responsible authorities must be held accountable.</p>
+      </div>
+      <div class="demand-item">
+        <h3>2. Protection for Victims</h3>
+        <p>Proper protection and support for victims of gender-based violence and harassment in educational institutions.</p>
+      </div>
+      <div class="demand-item">
+        <h3>3. Accountability for Institutions</h3>
+        <p>Educational institutions must establish transparent processes to handle harassment complaints.</p>
+      </div>
+      <div class="demand-item">
+        <h3>4. Legal Action</h3>
+        <p>Swift legal action against the perpetrators to ensure justice is served without delay.</p>
+      </div>
+      <div class="demand-item">
+        <h3>5. Awareness Programs</h3>
+        <p>Implement mandatory awareness programs about harassment and legal rights for students and staff.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="support-section">
+    <div class="container">
+      <h2>Show Your Support</h2>
+      <p>Join the movement for justice! Every voice counts.</p>
+      <button id="showSupportBtn">Support Kinza Saleem</button>
+      <p id="supportMsg" class="hidden">Thank you for showing your support! Your voice makes a difference.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 Justice for Kinza Saleem. All rights reserved. Muhammad Saqlain Shoukat</p>
+  </footer>
+
+  <script>
+    document.getElementById('showSupportBtn').addEventListener('click', function() {
+  const supportMessage = document.getElementById('supportMsg');
+  supportMessage.classList.remove('hidden');
+});
+  </script>
+</body>
+</html>
